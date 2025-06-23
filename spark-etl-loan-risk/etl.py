@@ -129,8 +129,8 @@ else:
 # === Save Output ===
 
 # Save locally 
-clean_df.write.mode("overwrite").option("header", "true").parquet(config["output_path"]["non_aggregated"] + '/' + current_date.strftime("%Y-%m-%d") + '/' + 'cleaned_data/')
-flagged_issues.write.mode("overwrite").option("header", "true").parquet(config["output_path"]["non_aggregated"]+ '/' + current_date.strftime("%Y-%m-%d") + '/' + 'flagged_issues/')
+clean_df.write.mode("overwrite").option("header", "true").parquet(config["output_path"] + '/' + current_date.strftime("%Y-%m-%d") + '/' + 'cleaned_data/')
+flagged_issues.write.mode("overwrite").option("header", "true").parquet(config["output_path"]+ '/' + current_date.strftime("%Y-%m-%d") + '/' + 'flagged_issues/')
 
 #save to aws
 # clean_df.write.mode("overwrite").option("header", "true").parquet("s3://your-bucket/path/")

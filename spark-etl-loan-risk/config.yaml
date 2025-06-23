@@ -1,8 +1,6 @@
 app_name: LoanRiskETL
 input_path: data/loan.csv
-output_path: 
-  non_aggregated: output/non_aggregated
-  aggregated: output/aggregated
+output_path: output
 
 data_types:
   ApplicationDate: date
