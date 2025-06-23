@@ -1,0 +1,82 @@
+app_name: LoanRiskETL
+input_path: data/loan.csv
+output_path: 
+  non_aggregated: output/non_aggregated/loan_risk_metrics
+  aggregated:
+    avg_approval_rate: output/aggregated/approval_rate_metrics.csv
+
+data_types:
+  ApplicationDate: timestamp
+  Age: integer
+  AnnualIncome: double
+  CreditScore: integer
+  EmploymentStatus: string
+  EducationLevel: string
+  Experience: integer
+  LoanAmount: double
+  LoanDuration: integer
+  MaritalStatus: string
+  NumberOfDependents: integer
+  HomeOwnershipStatus: string
+  MonthlyDebtPayments: integer
+  CreditCardUtilizationRate: double
+  NumberOfOpenCreditLines: integer
+  NumberOfCreditInquiries: integer
+  DebtToIncomeRatio: double
+  BankruptcyHistory: integer
+  LoanPurpose: string
+  PreviousLoanDefaults: integer
+  PaymentHistory: integer
+  LengthOfCreditHistory: integer
+  SavingsAccountBalance: double
+  CheckingAccountBalance: double
+  TotalAssets: double
+  TotalLiabilities: double
+  MonthlyIncome: double
+  UtilityBillsPaymentHistory: integer
+  JobTenure: integer
+  NetWorth: double
+  BaseInterestRate: double
+  InterestRate: double
+  MonthlyLoanPayment: double
+  TotalDebtToIncomeRatio: double
+  LoanApproved: integer
+  RiskScore: double
+
+rename_columns:
+  ApplicationDate: application_date
+  Age: age
+  AnnualIncome: annual_income
+  CreditScore: credit_score
+  EmploymentStatus: employment_status
+  EducationLevel: education_level
+  Experience: experience
+  LoanAmount: loan_amount
+  LoanDuration: loan_duration
+  MaritalStatus: marital_status
+  NumberOfDependents: number_of_dependents
+  HomeOwnershipStatus: home_ownership_status
+  MonthlyDebtPayments: monthly_debt_payments
+  CreditCardUtilizationRate: credit_card_utilization_rate
+  NumberOfOpenCreditLines: open_credit_lines
+  NumberOfCreditInquiries: credit_inquiries
+  DebtToIncomeRatio: debt_to_income_ratio
+  BankruptcyHistory: bankruptcy_history
+  LoanPurpose: loan_purpose
+  PreviousLoanDefaults: previous_loan_defaults
+  PaymentHistory: payment_history
+  LengthOfCreditHistory: length_of_credit_history
+  SavingsAccountBalance: savings_account_balance
+  CheckingAccountBalance: checking_account_balance
+  TotalAssets: total_assets
+  TotalLiabilities: total_liabilities
+  MonthlyIncome: monthly_income
+  UtilityBillsPaymentHistory: utility_bills_payment_history
+  JobTenure: job_tenure
+  NetWorth: net_worth
+  BaseInterestRate: base_interest_rate
+  InterestRate: interest_rate
+  MonthlyLoanPayment: monthly_loan_payment
+  TotalDebtToIncomeRatio: total_debt_to_income_ratio
+  LoanApproved: loan_approved
+  RiskScore: risk_score
