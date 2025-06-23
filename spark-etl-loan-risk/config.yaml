@@ -1,12 +1,11 @@
 app_name: LoanRiskETL
 input_path: data/loan.csv
 output_path: 
-  non_aggregated: output/non_aggregated/loan_risk_metrics
-  aggregated:
-    avg_approval_rate: output/aggregated/approval_rate_metrics.csv
+  non_aggregated: output/non_aggregated
+  aggregated: output/aggregated
 
 data_types:
-  ApplicationDate: timestamp
+  ApplicationDate: date
   Age: integer
   AnnualIncome: double
   CreditScore: integer
@@ -80,3 +79,21 @@ rename_columns:
   TotalDebtToIncomeRatio: total_debt_to_income_ratio
   LoanApproved: loan_approved
   RiskScore: risk_score
+
+check_missing_values:
+  - application_date
+  - loan_amount
+  - loan_duration
+  - interest_rate
+  - base_interest_rate
+  - loan_approved
+  - loan_purpose
+  - credit_score
+  - monthly_income
+  - annual_income
+  - monthly_debt_payments
+  - debt_to_income_ratio
+  - employment_status
+  - previous_loan_defaults
+  - total_assets
+  - total_liabilities

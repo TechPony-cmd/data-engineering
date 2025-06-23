@@ -7,22 +7,18 @@ This project uses Apache Spark to process loan application data, perform data cl
     ├── config.yaml #configuration file 
     ├── data/
     │   └── loan_data.csv # loan data
-    ├── loan_etl.py #etl pipeline
-    ├── run_loan_etl.sh #bash script to run etl
+    ├── etl.py #etl pipeline
+    ├── run_etl.sh #bash script to run etl
     ├── output/
+    │   └── non-aggregated/ # non-aggregated loan data
     └── README.md # Project documentation 
 
 ## Features
-- Load CSV loan data
-- Clean data
-- Calculate key metrics (approval rate)
-- Save results as partitioned Parquet files
-
-### Metrics Computed
-
-This project calculates several key business metrics for evaluating loan applicant risk and affordability, grouped by credit score and financial tier:
-
-1. **Approval Rate** by credit score, income, and loan purpose
+1. Load CSV loan data
+2. Clean and Normalize 
+3. Feature Engineering
+4. Quality Checks
+5. Save results as partitioned Parquet files
 
 ## Run the Project
 ```bash
