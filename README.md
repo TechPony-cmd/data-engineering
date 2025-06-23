@@ -13,15 +13,18 @@ I'm a firm believer in learning by doing. These projects are not polished produc
 
 ## 🔧 Technologies I'm Exploring
 Some of the tools and technologies featured in this repo include:
-- Python & SQL
+
+Current:
 - Apache Spark
-- Apache Airflow & Dagster
-- dbt (data build tool)
-- AWS (Lambda, S3, SES)
-- Snowflake & PostgreSQL
-- GitHub Actions
-- Jupyter
-- LookML
+
+Incoming:
+- Programming: Python, Sql
+- Big Data: Spark, Kafka
+- Orchestration: Apache Airflow, Dagster
+- Data Modeling: dbt (data build tool)
+- Cloud: GCP, AWS
+- Databases: Snowflake, BigQuery, PostgreSQL
+- Containerization: Docker, Kubernetes
 
 ## 📂 Project Structure
 Each subfolder typically includes:
